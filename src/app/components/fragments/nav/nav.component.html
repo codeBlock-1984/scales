@@ -1,0 +1,14 @@
+<ul class="nav justify-content-end">
+  <li *ngFor="let link of links" class="nav__list-item">
+    <a routerLink="" class="nav__link">
+      {{ link.title }}
+    </a>
+    <ul *ngIf="link.links" class="sub-nav">
+      <li *ngFor="let sublink of link.links" class="sub-nav__list-item">
+        <a routerLink="" class="sub-nav__link">
+          {{ sublink.title }}
+        </a>
+      </li>
+    </ul>
+  </li>
+</ul>

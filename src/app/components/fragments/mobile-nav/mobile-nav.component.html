@@ -1,0 +1,18 @@
+<ul class="mobile-nav d-flex flex-column p-4">
+  <li *ngFor="let link of links" class="mobile-nav__list-item">
+    <a routerLink="" [ngClass]="link.isActive ? 'mobile-nav__active' : ''" class="mobile-nav__link">
+      {{ link.title }}
+    </a>
+    <span *ngIf="link.links" [ngClass]="link.isActive ? 'down' : ''" class="mobile-nav__link-icon" (click)="toggleSubmenu(link)">
+      <fa-icon [icon]="faChevronRight" size="1x"></fa-icon>
+    </span>
+    <ul *ngIf="link.links" [ngClass]="link.isActive ? 'sub-nav__active' : ''">
+      <li *ngFor="let sublink of link.links" class="sub-nav__list-item">
+        <a routerLink="" class="sub-nav__link">
+          {{ sublink.title }}
+        </a>
+      </li>
+    </ul>
+  </li>
+</ul>
+  

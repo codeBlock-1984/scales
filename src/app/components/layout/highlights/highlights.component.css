@@ -1,0 +1,25 @@
+.highlights {
+  background: #f3f3f3;
+}
+
+.highlights__title {
+  font-size: 2rem;
+  text-align: center;
+}
+
+.section-divide {
+  width: 10%;
+  height: 3px;
+  border-bottom: solid 3px #b18c15;
+}
+
+
+@media screen and (max-width: 400px) {
+  .highlights__title {
+    font-size: 1.5rem;
+  }
+
+  .section-divide {
+    width: 20%;
+  }  
+}

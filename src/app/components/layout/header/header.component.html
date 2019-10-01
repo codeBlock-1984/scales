@@ -1,0 +1,23 @@
+<div class="header row">
+  <div class="col-2 col-sm-2 ml-4 ml-md-5 align-self-center justify-self-start">
+    <h1 class="header__title">{{ title }}</h1>
+  </div>
+  <div class="col-9 col-sm-9 col-md-7 offset-md-2 my-auto my-md-0 justify-content-end">
+    <app-nav [links]="links"></app-nav>
+    <div class="row mx-0 justify-content-end">
+      <div class="col-3 justify-content-end menu-icon__wrapper" (click)="showMobileNav()">
+        <fa-icon [icon]="faBars" size="2x"></fa-icon>
+      </div>
+    </div>
+  </div>
+  <div class="container-fluid mobile-nav__wrapper {{ show }}">
+    <div class="row">
+      <div class="col-9 offset-3 justify-content-end mobile-nav__box">
+        <span class="menu-icon__close" (click)="hideMobileNav()">
+          <fa-icon [icon]="faTimes" size="2x"></fa-icon>
+        </span>
+        <app-mobile-nav [links]="links"></app-mobile-nav>
+      </div>
+    </div>
+  </div>
+</div>
