@@ -1,0 +1,62 @@
+.footer-top {
+  color: #cecece;
+  background: #021618;
+}
+
+.sitemap {
+  font-size: 0.8rem;
+}
+
+.footer-nav__title {
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+
+.contact {
+  font-size: 0.8rem;
+}
+
+.section-divide {
+  display: none;
+  width: 80%;
+  height: 3px;
+  border-bottom: solid 1px #b18c15;
+}
+
+.footer-bottom {
+  color: #b18c15;
+  background: #04292c;
+}
+
+.copyright {
+  text-align: center;
+  font-size: 0.8rem;
+}
+
+.copyright__text {
+  text-align: center;
+}
+
+@media screen and (max-width: 400px) {
+  .footer-nav__title,
+  .footer-nav__text,
+  .copyright__text {
+    font-size: 0.7rem;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .section-divide {
+    display: block;
+  }
+
+  .contact {
+    display:  flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-nav__text {
+    text-align: center;
+  }
+}

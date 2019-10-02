@@ -1,0 +1,17 @@
+<div class="row w-100 mx-0">
+  <div *ngFor="let card of cards" class="col-12 col-md-3 px-4 mb-4 px-md-3 mb-md-0 d-flex flex-column highlights-card">
+    <div class="highlights-card__top position-relative">
+      <div class="highlights-card__top-overlay position-absolute">
+        <h2 class="card-title highlights-card__title ml-4 position-absolute">
+          {{ card.title }}
+        </h2>
+      </div>
+      <img src="{{ card.imageUrl }}" alt="{{ card.title }}" class="img-fluid card-img-top highlights-card__image">
+    </div>
+    <div class="highlights-card__bottom p-4">
+      <p class="highlights-card__text my-0">
+        {{ card.text }}
+      </p>
+    </div>
+  </div>
+</div>

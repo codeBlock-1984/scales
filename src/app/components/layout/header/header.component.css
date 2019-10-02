@@ -1,0 +1,45 @@
+.header {
+  position: relative;
+  height: 63px;
+  background: #021618;
+  color: #ececec;
+}
+.header__title {
+  font-size: 2rem;
+  color: #b18c15;
+}
+
+.menu-icon__wrapper {
+  display: none;
+  cursor: pointer;
+}
+
+.menu-icon__close {
+  position: fixed;
+  z-index: 2;
+  left: 85%;
+  top: 2%;
+  cursor: pointer;
+}
+
+.mobile-nav__wrapper {
+  position: fixed;
+  z-index: 1;
+  display: none;
+  min-height: 100vh;
+}
+
+.mobile-nav__box {
+  padding-top: 50px;
+  background: rgba(0, 1, 0, 0.98);
+}
+
+.show {
+  display: block;
+}
+
+@media screen and (max-width: 600px) {
+  .menu-icon__wrapper {
+    display: flex;
+  }
+}

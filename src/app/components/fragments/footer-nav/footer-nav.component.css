@@ -1,0 +1,16 @@
+.footer-nav__link {
+  display: block;
+  text-decoration: none;
+  font-size: 0.8rem;
+  color: #ececec;
+}
+
+.footer-nav__link:hover {
+  color: #b18c15;
+}
+
+@media screen and (max-width: 400px) {
+  .footer-nav__link {
+    font-size: 0.7rem;
+  }
+}
