@@ -1,7 +1,7 @@
 .mobile-nav {
   position: relative;
-  height: 100vh;
   padding-top: 50px;
+  height: calc(100% - 70px);
 }
 
 .mobile-nav__list-item {
@@ -11,7 +11,7 @@
 .mobile-nav__link {
   margin: 15px 0;
   color: #ececec;
-  font-size: 1rem;
+  font-size: 0.9rem;
   text-decoration: none;
 }
 
@@ -21,7 +21,7 @@
 
 .mobile-nav__link-icon {
   position: absolute;
-  left: 80%;
+  left: 84%;
   cursor: pointer;
 }
 
@@ -32,7 +32,8 @@
 }
 
 .mobile-nav__link:hover,
-.mobile-nav__link:active {
+.mobile-nav__link:active,
+.sub-nav__link:hover {
   color: #b18c15;
 }
 

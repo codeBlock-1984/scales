@@ -16,7 +16,7 @@
   cursor: pointer;
   text-decoration: none;
   color: #ececec;
-  border-bottom: solid 4px #021618;
+  border-bottom: solid 4px #000000;
 }
 
 .nav__link:hover {

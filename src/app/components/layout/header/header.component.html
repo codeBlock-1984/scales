@@ -11,12 +11,15 @@
     </div>
   </div>
   <div class="container-fluid mobile-nav__wrapper {{ show }}">
-    <div class="row">
+    <div class="row mobile-nav__row">
       <div class="col-9 offset-3 justify-content-end mobile-nav__box">
         <span class="menu-icon__close" (click)="hideMobileNav()">
-          <fa-icon [icon]="faTimes" size="2x"></fa-icon>
+          <fa-icon [icon]="faTimes" size="1x"></fa-icon>
         </span>
         <app-mobile-nav [links]="links"></app-mobile-nav>
+        <div class="d-flex justify-content-center">
+          <app-social-bar [socials]="socials"></app-social-bar>
+        </div>
       </div>
     </div>
   </div>

@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { Link } from '../../../models/Link';
+import { Social } from '../../../models/Social';
 import { firmLinks, practiceAreasLinks, mediaLinks } from '../../../data/links';
+import { socials } from '../../../data/socials';
 
 @Component({
   selector: 'app-footer',
@@ -11,6 +13,7 @@ export class FooterComponent implements OnInit {
   firmLinks: Link[];
   practiceAreasLinks: Link[];
   mediaLinks: Link[];
+  socials: Social[];
 
   constructor() { }
 
@@ -18,6 +21,7 @@ export class FooterComponent implements OnInit {
     this.firmLinks = firmLinks;
     this.practiceAreasLinks = practiceAreasLinks;
     this.mediaLinks = mediaLinks;
+    this.socials = socials;
   }
 
 }

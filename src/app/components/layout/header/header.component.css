@@ -1,7 +1,7 @@
 .header {
   position: relative;
   height: 63px;
-  background: #021618;
+  background: #000000;
   color: #ececec;
 }
 .header__title {
@@ -17,21 +17,32 @@
 .menu-icon__close {
   position: fixed;
   z-index: 2;
-  left: 85%;
-  top: 2%;
+  left: 86%;
+  top: 3.5%;
   cursor: pointer;
+  padding: 4px 10px;
+  color: #ececec;
+  background: #0e0e0e;
+  border: 1px solid #0e0e0e;
+  border-radius: 50%;
 }
 
 .mobile-nav__wrapper {
   position: fixed;
   z-index: 1;
+  left: 0;
+  right: 0;
   display: none;
-  min-height: 100vh;
+  height: 100vh;
+}
+
+.mobile-nav__row {
+  height: 100%;
 }
 
 .mobile-nav__box {
   padding-top: 50px;
-  background: rgba(0, 1, 0, 0.98);
+  background: #0e0e0ef2;
 }
 
 .show {
