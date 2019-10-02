@@ -1,0 +1,20 @@
+.social-bar {
+  margin: 8px 0;
+}
+
+.social-bar__link {
+  color: #ececec;
+  margin: 12px;
+  margin-left: 0;
+}
+
+.social-bar__link:hover {
+  color: #b18c15;
+}
+
+@media screen and (max-width: 767px) {
+  .social-bar__link {
+    margin: 6px;
+    margin-left: 6px;
+  }
+}

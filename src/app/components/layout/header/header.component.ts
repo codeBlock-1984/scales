@@ -1,7 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import { faBars, faTimes } from '@fortawesome/free-solid-svg-icons';
 import { Link } from '../../../models/Link';
+import { Social } from '../../../models/Social';
 import { homeLinks } from '../../../data/links';
+import { socials } from '../../../data/socials';
 
 @Component({
   selector: 'app-header',
@@ -14,6 +16,7 @@ export class HeaderComponent implements OnInit {
   faBars: any;
   faTimes: any;
   show: String;
+  socials: Social[];
 
   constructor() { }
 
@@ -23,6 +26,7 @@ export class HeaderComponent implements OnInit {
     this.faBars = faBars;
     this.faTimes = faTimes;
     this.show = '';
+    this.socials = socials;
   }
 
   showMobileNav() {

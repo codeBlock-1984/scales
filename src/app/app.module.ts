@@ -2,6 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import bootstrap from 'bootstrap';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { AngularFontAwesomeModule } from 'angular-font-awesome';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -14,6 +15,7 @@ import { HighlightsCardComponent } from './components/fragments/highlights-card/
 import { FooterComponent } from './components/layout/footer/footer.component';
 import { FooterNavComponent } from './components/fragments/footer-nav/footer-nav.component';
 import { MobileNavComponent } from './components/fragments/mobile-nav/mobile-nav.component';
+import { SocialBarComponent } from './components/fragments/social-bar/social-bar.component';
 
 @NgModule({
   declarations: [
@@ -26,12 +28,14 @@ import { MobileNavComponent } from './components/fragments/mobile-nav/mobile-nav
     HighlightsCardComponent,
     FooterComponent,
     FooterNavComponent,
-    MobileNavComponent
+    MobileNavComponent,
+    SocialBarComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FontAwesomeModule
+    FontAwesomeModule,
+    AngularFontAwesomeModule
   ],
   providers: [],
   bootstrap: [AppComponent]
