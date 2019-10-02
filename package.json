@@ -3,11 +3,13 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
+    "serve": "ng serve",
+    "start": "node server.js",
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "postinstall": "ng build --output-path dist --prod"
   },
   "private": true,
   "dependencies": {
@@ -23,6 +25,8 @@
     "@fortawesome/fontawesome-svg-core": "^1.2.25",
     "@fortawesome/free-solid-svg-icons": "^5.11.2",
     "bootstrap": "^4.3.1",
+    "dotenv": "^8.1.0",
+    "express": "^4.17.1",
     "jquery": "^3.4.1",
     "normalize.css": "^8.0.1",
     "popper.js": "^1.15.0",
